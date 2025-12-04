@@ -1,0 +1,54 @@
+@use 'helpers/index' as *;
+
+:root {
+  --bg-dark: oklch(23.5% 0.02 240);
+  --bg: oklch(38% 0 0);
+  --bg-light: oklch(51% 0 0);
+
+  --text: oklch(97% 0.005 240);
+  --text-muted: oklch(63% 0.01 240);
+  --highlight: oklch(77% 0.04 240);
+
+  --border-color: oklch(63% 0.15 145);
+  --border-muted: oklch(57% 0.14 145);
+
+  --primary: oklch(68% 0.17 145);
+  --secondary: oklch(23.5% 0.02 240);
+
+  --danger:  oklch(59% 0.22 25);
+  --warning: oklch(86% 0.15 95);
+  --success:  oklch(50% 0.13 150);
+  --info: oklch(62% 0.18 245);
+
+  --shadow-l: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
+  --shadow-m: 0 6px 12px 0 rgba(171, 190, 209, 0.3);
+  --shadow-s: 0 2px 4px 0 rgba(171, 190, 209, 0.6);
+
+  --border: var(--border-width-m) solid var(--border-color);
+
+  --border-width-xl: 6px;
+  --border-width-l: 4px;
+  --border-width-m: 3px;
+  --border-width-xm: 2px;
+  --border-width-s: 1px;
+
+  --border-radius-l: 12px;
+  --border-radius-m: 10px;
+  --border-radius: 8px;
+  --border-radius-xs: 6px;
+  --border-radius-xxs: 5px;
+  --border-radius-xxxs: 4px;
+
+  --input-height: 48px;
+
+  --font-family-base: 'Inter', sans-serif;
+  --font-family--secondary: 'Montserrat', sans-serif;
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 24px;
+
+  --transition-duration: 0.2s;
+}
