@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.swiper-wrapper {
+  padding-block: 96px;
+}
+
+.swiper-pagination {
+  &-bullet {
+    --swiper-pagination-bullet-height: 10px;
+    --swiper-pagination-bullet-width: 10px;
+
+    --swiper-pagination-color: var(--border-color);
+
+    --swiper-pagination-bullet-inactive-color: var(--border-hover);
+  }
+}

@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.button {
+  width: 151px;
+  height: var(--input-height);
+  padding: 14px 32px;
+  color: var(--bg);
+  background-color: var(--border-color);
+  border: none;
+  border-radius: var(--border-radius-xxs);
+
+  @include hover {
+    background-color: var(--border-hover);
+  }
+
+  &:active {
+    background-color: var(--border-active);
+  }
+}

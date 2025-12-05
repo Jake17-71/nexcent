@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.card {
+  @include flex-center;
+
+  flex-direction: column;
+  width: 300px;
+  padding: 16px 24px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-m);
+
+  &__image {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.28571;
+    text-align: center;
+    color: var(--text-grey);
+  }
+
+  &__content {
+    line-height: 1.42857;
+    text-align: center;
+    color: var(--text-grey-light);
+  }
+}

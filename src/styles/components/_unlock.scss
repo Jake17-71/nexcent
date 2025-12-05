@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.unlock {
+  position: relative;
+  padding-block: 40px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--bg-light);
+
+    @include abs-center;
+  }
+
+  &__container {
+    @include flex-center;
+
+    gap: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 660px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    line-height: 1.22222;
+    color: var(--text-grey);
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    line-height: 1.42857;
+    color: var(--text-grey-light);
+  }
+
+  &__image-container {
+    @include flex-center;
+
+    width: 440px;
+    height: 430px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 330px;
+  }
+
+  &__learn {
+    --input-height: 52px;
+
+    padding: 8px 12px;
+  }
+}

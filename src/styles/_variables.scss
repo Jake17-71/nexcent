@@ -1,24 +1,26 @@
 @use 'helpers/index' as *;
 
 :root {
-  --bg-dark: oklch(23.5% 0.02 240);
-  --bg: oklch(38% 0 0);
-  --bg-light: oklch(51% 0 0);
+  --bg-dark: #e5e6ea;
+  --bg: #f5f7fa;
+  --bg-light: #fcfdff;
 
-  --text: oklch(97% 0.005 240);
-  --text-muted: oklch(63% 0.01 240);
-  --highlight: oklch(77% 0.04 240);
+  --text: #18191f;
+  --text-grey: #4d4d4d;
+  --text-grey-light: #717171;
+  --highlight: oklch(77% 0.04 240deg);
 
-  --border-color: oklch(63% 0.15 145);
-  --border-muted: oklch(57% 0.14 145);
+  --border-color: oklch(63% 0.15 145deg);
+  --border-hover: oklch(57% 0.14 145deg);
+  --border-active: #327034;
 
-  --primary: oklch(68% 0.17 145);
-  --secondary: oklch(23.5% 0.02 240);
+  --primary: oklch(68% 0.17 145deg);
+  --secondary: oklch(23.5% 0.02 240deg);
 
-  --danger:  oklch(59% 0.22 25);
-  --warning: oklch(86% 0.15 95);
-  --success:  oklch(50% 0.13 150);
-  --info: oklch(62% 0.18 245);
+  --danger:  oklch(59% 0.22 25deg);
+  --warning: oklch(86% 0.15 95deg);
+  --success:  oklch(50% 0.13 150deg);
+  --info: oklch(62% 0.18 245deg);
 
   --shadow-l: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
   --shadow-m: 0 6px 12px 0 rgba(171, 190, 209, 0.3);
