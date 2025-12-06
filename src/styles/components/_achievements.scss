@@ -1,0 +1,52 @@
+@use '../helpers' as *;
+
+.achievements {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 64px;
+    gap: 72px;
+  }
+
+  &__content {
+    flex-shrink: 0;
+    max-width: 540px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    line-height: 1.22222;
+    color: var(--text-grey);
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    flex-shrink: 0;
+  }
+
+  .list__item {
+    display: flex;
+    gap: 16px;
+    max-width: 255px;
+  }
+}
+
+.achievement {
+  &__title {
+    font-weight: 700;
+    line-height: 1.28571;
+    color: var(--text-grey);
+  }
+
+  &__description {
+    line-height: 1.5;
+    color: var(--text-grey-light);
+  }
+}

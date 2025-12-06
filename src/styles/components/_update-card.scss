@@ -1,0 +1,53 @@
+@use '../helpers' as *;
+
+.update-card {
+  @include flex-center;
+  flex-direction: column;
+  max-height: 390px;
+
+  &__image {
+    max-width: 370px;
+    max-height: 290px;
+    border-radius: var(--border-radius);
+  }
+
+  &__body {
+    max-width: 320px;
+    background-color: var(--bg-dark);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    box-shadow: var(--shadow-m);
+    @include flex-center;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-grey-light);
+  }
+
+  &__link {
+    color: var(--border-color);
+    font-weight: 600;
+    line-height: 1.4;
+    position: relative;
+    padding-right: 32px;
+
+    @include hover() {
+      color: var(--border-hover);
+    }
+
+    &::after {
+      @include abs-y;
+      content: '';
+      @include square(24px);
+      background: url('/arrow-right.svg') center/contain no-repeat;
+      right: 0;
+    }
+  }
+}

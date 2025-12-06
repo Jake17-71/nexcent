@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+
+.updates {
+  position: relative;
+  padding-block: 40px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--bg-light);
+
+    @include abs-center;
+  }
+
+  &__container {
+    @include flex-center;
+
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: var(--text-grey);
+    text-align: center;
+    line-height: 1.22222;
+  }
+
+  &__content {
+    margin-bottom: 16px;
+    color: var(--text-grey-light);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-block: 25px;
+  }
+}

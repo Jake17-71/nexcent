@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.review-card {
+  &__body {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-grey-light);
+    margin-bottom: 16px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__name {
+    font-weight: 600;
+    line-height: 1.4;
+    font-style: normal;
+    color: var(--border-color);
+  }
+
+  &__company {
+    font-style: normal;
+    color: var(--text-grey-light);
+  }
+}

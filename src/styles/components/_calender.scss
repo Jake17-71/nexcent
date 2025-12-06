@@ -1,6 +1,6 @@
 @use '../helpers' as *;
 
-.unlock {
+.calender {
   position: relative;
   padding-block: 40px;
 
@@ -51,7 +51,7 @@
 
   &__image {
     width: 100%;
-    height: 330px;
+    height: 100%;
   }
 
   &__learn {
