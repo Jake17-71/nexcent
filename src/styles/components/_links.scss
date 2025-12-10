@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 160px;
+
+  .link {
+    width: 100%;
+    color: var(--text-silver);
+
+    @include hover {
+      color: var(--border-hover);
+    }
+  }
+}

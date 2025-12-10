@@ -2,6 +2,7 @@
 
 .update-card {
   @include flex-center;
+
   flex-direction: column;
   max-height: 390px;
 
@@ -12,42 +13,45 @@
   }
 
   &__body {
-    max-width: 320px;
-    background-color: var(--bg-dark);
-    border-radius: var(--border-radius);
-    padding: 16px;
-    box-shadow: var(--shadow-m);
-    @include flex-center;
+    z-index: 1;
     flex-direction: column;
     gap: 16px;
-    z-index: 1;
+    max-width: 320px;
+    padding: 16px;
+    background-color: var(--bg-dark);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-m);
     transform: translateY(-50%);
+
+    @include flex-center;
   }
 
   &__title {
-    text-align: center;
     font-weight: 600;
     line-height: 1.4;
+    text-align: center;
     color: var(--text-grey-light);
   }
 
   &__link {
-    color: var(--border-color);
-    font-weight: 600;
-    line-height: 1.4;
     position: relative;
     padding-right: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--border-color);
 
-    @include hover() {
+    @include hover {
       color: var(--border-hover);
     }
 
     &::after {
       @include abs-y;
+
       content: '';
-      @include square(24px);
-      background: url('/arrow-right.svg') center/contain no-repeat;
       right: 0;
+      background: url('/arrow-right.svg') center/contain no-repeat;
+
+      @include square(24px);
     }
   }
 }

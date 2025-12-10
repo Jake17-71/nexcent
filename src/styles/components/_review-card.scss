@@ -2,10 +2,10 @@
 
 .review-card {
   &__body {
+    margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--text-grey-light);
-    margin-bottom: 16px;
   }
 
   &__footer {
@@ -16,8 +16,8 @@
 
   &__name {
     font-weight: 600;
-    line-height: 1.4;
     font-style: normal;
+    line-height: 1.4;
     color: var(--border-color);
   }
 

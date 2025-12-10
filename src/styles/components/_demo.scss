@@ -2,10 +2,11 @@
 
 .demo {
   &__container {
-    @include flex-center();
+    @include flex-center;
+
     flex-direction: column;
-    padding-block: 32px;
     gap: 32px;
+    padding-block: 32px;
   }
 
   &__title {
@@ -15,17 +16,17 @@
   }
 
   &__link {
-    background-color: var(--border-color);
-    color: var(--bg);
-    font-weight: 500;
-    line-height: 1.5;
     position: relative;
     padding: 14px 50px 14px 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--bg);
+    background-color: var(--border-color);
     border-radius: var(--border-radius-xxxs);
 
-    @include hover() {
-      opacity: 0.75;
+    @include hover {
       color: var(--bg);
+      opacity: 0.75;
     }
 
     &:active {
@@ -34,10 +35,12 @@
 
     &::after {
       @include abs-y;
+
       content: '';
-      @include square(24px);
-      background: url('/arrow-right--white.svg') center/contain no-repeat;
       right: 18px;
+      background: url('/arrow-right--white.svg') center/contain no-repeat;
+
+      @include square(24px);
     }
   }
 }

@@ -3,14 +3,15 @@
 .customers {
   &__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 78px;
     padding-block: 32px;
   }
 
   &__image-container {
     @include square(325px);
+
     flex-shrink: 0;
   }
 
@@ -31,13 +32,14 @@
 
   &__images {
     @include flex-center;
+
     gap: 32px;
   }
 
   &__list {
     display: flex;
-    gap: 32px;
     align-items: center;
+    gap: 32px;
   }
 
   .list__item {
@@ -47,22 +49,24 @@
   }
 
   &__link {
-    color: var(--border-color);
-    font-weight: 600;
-    line-height: 1.4;
     position: relative;
     padding-right: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--border-color);
 
-    @include hover() {
+    @include hover {
       color: var(--border-hover);
     }
 
     &::after {
       @include abs-y;
+
       content: '';
-      @include square(24px);
-      background: url('/arrow-right.svg') center/contain no-repeat;
       right: 0;
+      background: url('/arrow-right.svg') center/contain no-repeat;
+
+      @include square(24px);
     }
   }
 }

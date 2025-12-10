@@ -3,10 +3,10 @@
 .achievements {
   &__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-block: 64px;
+    align-items: center;
     gap: 72px;
+    padding-block: 64px;
   }
 
   &__content {
@@ -25,10 +25,10 @@
   }
 
   &__list {
+    flex-shrink: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 40px;
-    flex-shrink: 0;
   }
 
   .list__item {

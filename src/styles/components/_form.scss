@@ -1,0 +1,56 @@
+@use '../helpers' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    left: 12px;
+    font-size: 16px;
+    color: var(--text-grey);
+    transition-duration: var(--transition-duration);
+    pointer-events: none;
+
+    @include abs-y;
+  }
+
+  &__control {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    --input-height: 40px;
+
+    width: 100%;
+    height: var(--input-height);
+    padding: 10px 48px 10px 12px;
+    background-color: var(--bg-dark);
+    border: none;
+    border-radius: var(--border-radius);
+
+    &:focus ~ .form__label,
+    &:not(:placeholder-shown) ~ .form__label {
+      top: -14px;
+      left: 8px;
+      padding: 0 4px;
+      font-size: 14px;
+      color: var(--text-silver);
+    }
+  }
+
+  &__button {
+    @include square(24px);
+    @include abs-y;
+
+    right: 12px;
+    padding: 0;
+    color: var(--text-grey);
+    background-color: transparent;
+
+    @include hover {
+      background-color: transparent;
+    }
+  }
+}

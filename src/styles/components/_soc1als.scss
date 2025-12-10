@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.soc1als {
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__link {
+    @include square(32px);
+
+    justify-content: center;
+    align-items: center;
+    color: var(--bg);
+    background-color: var(--text-grey-light);
+    border-radius: 50%;
+
+    @include hover {
+      background-color: var(--text-grey);
+    }
+  }
+}
